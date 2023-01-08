@@ -1,0 +1,63 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body { 
+  font-family: 'Playfair Display SC', georgia;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #FAF6ED;
+}
+
+.numeros-grid {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.animal {
+  width: 100px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+}
+
+.animal::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top:40px;
+  background-color: #FB5;
+  border-radius:50% ;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+}
+
+.numero::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top:-40px;
+  left: -10px;
+  background-color: #FF8147;
+  border-radius:50% ;
+  height: 120px;
+  width: 120px;
+  z-index: -2;
+}
+
+img {
+  width: 110%;
+  top: 0;
+  left: 550x;
+  border-radius: 10px 0px 10px 0 ;
+  transform: translateY(-100%);
+  z-index: -2;
+  position: absolute;
+}
